@@ -1,0 +1,24 @@
+<p>course works!</p>
+<h2>{{title}}</h2>
+<ul>
+    <li *ngFor="let course of courses"> {{course}}</li>
+</ul>
+<div>
+    <button class="btn btn-primary" [class.active]="isActive" 
+    [style.backgroundColor]="isActive? 'green ': 'red'" (click)="onClick($event)" >Click̥̥̥
+</button>̥
+</div>
+<br>
+<!--Two way binding -->
+    <div><input [(ngModel)]="email" (keyup.enter)="onKeyUp()"/></div>
+    <!--one way binding -->
+    <!-- <div><input [value]="email" (keyup.enter)="onKeyUp()"/></div> -->
+    <br>
+
+    <div> 
+        <!--customr pipe -->
+      <h4>{{text | summary:14 }}</h4>  
+    </div>
+
+
+<!-- <div><img [src]="imageUrl" /></div> -->

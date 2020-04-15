@@ -1,0 +1,8 @@
+<div class="star-rating">
+    <!-- <p>Star rating <span [class]="isFavorite ? 'fa fa-star' : 'fa fa-star-o' " (click)="onStarClick()"></span></p> -->
+    
+    <p> Star rating : <span [ngClass]="{'fa': true ,'fa-star': !isFavorite, 'fa-star-o': isFavorite}"  (click)="onStarClick()">
+
+
+    </span></p>    
+</div>
