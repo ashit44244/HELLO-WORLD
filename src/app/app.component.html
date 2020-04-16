@@ -3,7 +3,9 @@
 <app-header-nav></app-header-nav>
 <app-course></app-course>
 
+<div>
 <app-favorite [is-favorite]="post.serverVal" (change)="OnFavChange($event)"></app-favorite>
+</div>
 
 <app-bootstrap-panel></app-bootstrap-panel>
 

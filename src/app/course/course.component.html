@@ -1,4 +1,4 @@
-<p>course works!</p>
+<h2>***** courses Module ****</h2>
 <h2>{{title}}</h2>
 <ul>
     <li *ngFor="let course of courses"> {{course}}</li>
@@ -22,3 +22,12 @@
 
 
 <!-- <div><img [src]="imageUrl" /></div> -->
+
+<div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+
+<ng-template #coursesList>
+    Display list of courses from Service 
+</ng-template>
+<ng-template #noCourses>
+    Not courses yet
+</ng-template>
