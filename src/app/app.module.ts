@@ -10,10 +10,11 @@ import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { CourseComponent } from './course/course.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderNavComponent, CourseComponent, SummaryPipe, FavoriteComponent, BootstrapPanelComponent
+    AppComponent, HeaderNavComponent, CourseComponent, SummaryPipe, FavoriteComponent, BootstrapPanelComponent, InputFormatDirective
   ],
   imports: [
     BrowserModule,
