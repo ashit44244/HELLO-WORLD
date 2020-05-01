@@ -17,7 +17,7 @@ export class InputFormatDirective {
   @HostListener('blur') onBlur(){
     console.log("on blur");
     let value : string = this.el.nativeElement.value;
-    this.el.nativeElement.value = value.toLocaleLowerCase;
+    this.el.nativeElement.value = value.toLocaleLowerCase();
   }
 
 
